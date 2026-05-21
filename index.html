@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Évaluation par compétences</title>
+  <link rel="stylesheet" href="evaluation_style.css">
+</head>
+<body>
+  <h1>Évaluation par compétences</h1>
+  <h4>Par Lou JORANDON pour le lycée Renée Bonnet</h4>
+
+  <div class="actions">
+    <button onclick="resetAll()">Réinitialiser</button>
+  </div>
+
+  <!-- ===== Bloc E2 ===== -->
+  <div class="bloc-epreuve">
+    <h2 class="titre-epreuve">E2 — Coefficient 5</h2>
+    <div id="competences-E2"></div>
+  </div>
+
+  <!-- ===== Bloc E31 ===== -->
+  <div class="bloc-epreuve">
+    <h2 class="titre-epreuve">E31 — Coefficient 5</h2>
+    <div id="competences-E31"></div>
+  </div>
+
+  <!-- ===== Bloc E32 ===== -->
+  <div class="bloc-epreuve">
+    <h2 class="titre-epreuve">E32 — Coefficient 3</h2>
+    <div id="competences-E32"></div>
+  </div>
+
+  <!-- Zone résultats globaux -->
+  <div class="resultats">
+    <h2>Résultats globaux</h2>
+    <div class="resultats-grille">
+      <div class="res-epreuve" id="res-E2">
+        <h3>E2 (coef 5)</h3>
+        <p>Rouge : <span id="rouge-E2">0</span></p>
+        <p>Orange : <span id="orange-E2">0</span></p>
+        <p>Vert clair : <span id="vertClair-E2">0</span></p>
+        <p>Vert foncé : <span id="vertFonce-E2">0</span></p>
+        <p class="note-epreuve">Note /20 : <span id="note-E2">0</span></p>
+      </div>
+      <div class="res-epreuve" id="res-E31">
+        <h3>E31 (coef 5)</h3>
+        <p>Rouge : <span id="rouge-E31">0</span></p>
+        <p>Orange : <span id="orange-E31">0</span></p>
+        <p>Vert clair : <span id="vertClair-E31">0</span></p>
+        <p>Vert foncé : <span id="vertFonce-E31">0</span></p>
+        <p class="note-epreuve">Note /20 : <span id="note-E31">0</span></p>
+      </div>
+      <div class="res-epreuve" id="res-E32">
+        <h3>E32 (coef 3)</h3>
+        <p>Rouge : <span id="rouge-E32">0</span></p>
+        <p>Orange : <span id="orange-E32">0</span></p>
+        <p>Vert clair : <span id="vertClair-E32">0</span></p>
+        <p>Vert foncé : <span id="vertFonce-E32">0</span></p>
+        <p class="note-epreuve">Note /20 : <span id="note-E32">0</span></p>
+      </div>
+    </div>
+    <h3 class="note-finale">Note finale pondérée /20 : <span id="note-finale">0</span></h3>
+    <p class="detail-coef">Détail : E2×5 + E31×5 + E32×3 (total coef = 13)</p>
+  </div>
+
+  <script src="evaluation_script.js"></script>
+</body>
+</html>

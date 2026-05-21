@@ -1,0 +1,142 @@
+/* ===================== evaluation_style.css ===================== */
+
+/* Style global de la page */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background-color: rgb(159, 202, 214);
+}
+
+h1 {
+  color: rebeccapurple;
+}
+
+h4 {
+  font-size: large;
+  color: red;
+  padding: auto;
+}
+
+/* Zone des boutons */
+.actions {
+  margin-bottom: 20px;
+}
+
+/* Style des boutons */
+button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Bloc d'une épreuve */
+.bloc-epreuve {
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 2px solid #555;
+  border-radius: 6px;
+}
+
+/* Titre de l'épreuve */
+.titre-epreuve {
+  color: rebeccapurple;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 6px;
+}
+
+/* Une ligne de compétence */
+.competence {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Nom de la compétence */
+.nom-competence {
+  font-weight: bold;
+  min-width: 40px;
+}
+
+/* Pourcentage */
+.pct-competence {
+  color: #555;
+  font-size: 0.9em;
+  min-width: 48px;
+  margin-right: 8px;
+}
+
+/* Carrés de sélection */
+.niveau {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/* Couleurs */
+.rouge     { background-color: red; }
+.orange    { background-color: orange; }
+.vertClair { background-color: lightgreen; }
+.vertFonce { background-color: green; }
+
+/* Effet quand sélectionné */
+.selected {
+  border: 5px solid black;
+}
+
+/* Grille résultats côte à côte */
+.resultats-grille {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+/* Bloc résultat par épreuve */
+.res-epreuve {
+  flex: 1;
+  min-width: 160px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 10px 14px;
+}
+
+.res-epreuve h3 {
+  color: rebeccapurple;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.note-epreuve {
+  font-weight: bold;
+}
+
+/* Bloc résultats globaux */
+.resultats {
+  margin-top: 20px;
+  padding: 14px;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Note finale mise en valeur */
+.note-finale {
+  font-size: 1.2em;
+  color: rebeccapurple;
+  margin-top: 8px;
+}
+
+.detail-coef {
+  color: #444;
+  font-size: 0.85em;
+  margin-top: 2px;
+}
